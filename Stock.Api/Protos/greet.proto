@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+option csharp_namespace = "Stock.Api";
+
+package stock;
+
+// The stock service definition.
+service Stock {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc GetProduct (ProductRequest) returns (ProductReply);
+  rpc AddProduct (AddProductRequest) returns (AddProductReply);
+  rpc OrderProduct (OrderProductRequest) returns (OrderProductReply);
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
+
+message ProductRequest {
+  string id = 1;
+}
+
+message ProductReply {
+  string id = 1;
+  string name = 2;
+  int64 quantity = 3;
+}
+
+message AddProductRequest {
+  string id = 1;
+  string name = 2;
+  int64 quantity = 3;
+}
+
+message AddProductReply {
+  string id = 1;
+  bool status = 2;
+  string message = 3;
+}
+
+message OrderProductRequest {
+  string id = 1;
+  int64 quantity = 3;
+}
+
+message OrderProductReply {
+  string id = 1;
+  bool status = 2;
+  string message = 3;
+}

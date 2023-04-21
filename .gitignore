@@ -1,0 +1,21 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Order.Api/bin/Debug/net7.0
+/Order.Api/obj/Debug/net7.0
+/Order.Api/obj/Order.Api.csproj.nuget.dgspec.json
+/Order.Api/obj
+/Order.Domain/bin/Debug/net7.0
+/Order.Domain/obj
+/Order.Infrastructure/bin/Debug/net7.0
+/Order.Infrastructure/obj/Debug/net7.0
+/Order.Infrastructure/obj
+/Stock.Api/bin/Debug/net7.0
+/Stock.Api/obj
+/Stock.Domain/bin/Debug/net7.0
+/Stock.Domain/obj
+/Stock.Infrastructure/bin/Debug/net7.0
+/Stock.Infrastructure/obj/Debug/net7.0
+/Stock.Infrastructure/obj
