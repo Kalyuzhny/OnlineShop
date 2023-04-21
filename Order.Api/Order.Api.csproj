@@ -32,5 +32,7 @@
     <ProjectReference Include="..\Order.Domain\Order.Domain.csproj" />
     <ProjectReference Include="..\Order.Infrastructure\Order.Infrastructure.csproj" />
   </ItemGroup>
-
+	<ItemGroup>
+		<InternalsVisibleTo Include="Order.Api.Integration.Tests" />
+	</ItemGroup>
 </Project>

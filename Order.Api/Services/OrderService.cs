@@ -5,7 +5,7 @@ using Order.Api.Commands;
 
 namespace Order.Api.Services
 {
-    public class OrderService : Order.OrderBase
+    public class OrderService : Order.OrderBase, IOrderService
     {
         private readonly ILogger<OrderService> _logger;
         private readonly IMediator _mediatr;
@@ -48,7 +48,7 @@ namespace Order.Api.Services
                     Message = ex.Message,
                     Status = false
                 };
-            }            
+            }
         }
     }
 }

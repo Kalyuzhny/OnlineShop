@@ -19,3 +19,5 @@
 /Stock.Infrastructure/bin/Debug/net7.0
 /Stock.Infrastructure/obj/Debug/net7.0
 /Stock.Infrastructure/obj
+/Order.Api.IntegrationTests/bin/Debug/net7.0
+/Order.Api.IntegrationTests/obj
